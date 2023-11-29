@@ -10,6 +10,7 @@ form{
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
 }
 input{
   height: 1.5rem;
@@ -20,5 +21,22 @@ button{
   border-radius: 10px;
   background-color: burlywood;
   padding: 5px;
-
+}
+.movieContainer{
+  display: flex;
+  flex-direction: column;
+}
+.movieDiv{
+font-size: 0.8rem;
+width: 80vw;
+background-color: burlywood;
+padding: 5px;
+margin: 5px;
+border-radius: 10px;
+}
+.movieDiv:hover{
+  background-color: antiquewhite;
+  border: solid 3px burlywood;
+  transform: scale(1.05);
+  transition: all 0.3s ease;
 }

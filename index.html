@@ -7,11 +7,12 @@
     <title>Vite App</title>
   </head>
   <body>
-    <form action="submit">
-      <label for="search">Sök filmtitel här:</label>
-      <input type="text">
-      <button id="searchMovieButton">Sök</button>
+    <form id="searchForm">
+      <label>Sök filmtitel här:</label>
+      <input type="text" id="searchText">
+      <button>Sök</button>
     </form>
+    <div id="movieContainer" class="movieContainer"></div>
     <div id="app"></div>
     <script type="module" src="/src/js/main.js"></script>
   </body>
