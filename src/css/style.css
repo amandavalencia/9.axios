@@ -17,7 +17,7 @@ input{
   border-radius: 10px;
 }
 button{
-  width: 50px;
+  width: 60px;
   border-radius: 10px;
   background-color: burlywood;
   padding: 5px;
@@ -27,16 +27,20 @@ button{
   flex-direction: column;
 }
 .movieDiv{
+text-align: center;
 font-size: 0.8rem;
 width: 80vw;
 background-color: burlywood;
 padding: 5px;
 margin: 5px;
 border-radius: 10px;
+box-shadow: 10px 19px 15px -4px rgba(0,0,0,0.58);
+-webkit-box-shadow: 10px 19px 15px -4px rgba(0,0,0,0.58);
+-moz-box-shadow: 10px 19px 15px -4px rgba(0,0,0,0.58);
 }
 .movieDiv:hover{
   background-color: antiquewhite;
   border: solid 3px burlywood;
   transform: scale(1.05);
   transition: all 0.3s ease;
-}
+} 

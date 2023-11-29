@@ -6,3 +6,7 @@ export const searchMovie = async(title) =>{ //titel blir det man skickat över m
 
     return data.Search; // returnerar det man fått ut av get funktionen, vilket är resultatet av fetch tar ut egenskapen Search och skickar det till den kallande funktionen, vilket är searchMovie
   }
+export const getMovieById = async (id) =>{
+    const url = "http://www.omdbapi.com/?apikey=aa1b7a15&i="+ id;
+    return await get(url);
+}

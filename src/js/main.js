@@ -1,3 +1,4 @@
+import { createHtml } from './htmlCreator';
 import { searchMovie } from './movieService';
 import '/src/css/style.css'
 
@@ -10,16 +11,10 @@ document.getElementById("searchForm").addEventListener("submit", async (e) => { 
   createHtml(movies);
 })
 
-const createHtml = (movies) => {
-  const movieContainer = document.getElementById("movieContainer");
-  movieContainer.innerHTML = "";
-  for (let i = 0; i < movies.length; i++) {
-    const h3 = document.createElement("h3");
-    h3.innerHTML = movies[i].Title;
-    console.log(movies[i].Title);
-    const movieDiv = document.createElement("div");
-    movieDiv.className = "movieDiv";
-    movieDiv.appendChild(h3);
-    movieContainer.appendChild(movieDiv);
-  }
-}
+
+
+// 
+// const r = await fetch("http://www.omdbapi.com/?apikey=aa1b7a15&i=tt1285016");
+// const data = await r.json();
+// console.log(data);
+
